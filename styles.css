@@ -44,7 +44,7 @@ input {
 .Cv{
     display: flex;
     justify-content: center;
-    flex-direction: colum; 
+    flex-direction: column; 
 }
 
 
