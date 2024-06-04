@@ -1,0 +1,108 @@
+body {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: pink;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15%;
+    font-size: large;
+
+
+}
+.caroussel{
+display: flex;
+justify-content: center;
+}
+.Formulaire{
+    display: flex;
+   
+    justify-content: center;
+}
+.Pagechat{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+
+.Cv{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+p {
+    letter-spacing: .2rem;
+    line-height: 50px;
+   
+    vertical-align: middle; 
+    color: #210303;
+}
+
+#Cv{
+    width: 500px;
+    height: 600px;  
+}
+img{
+   width: 450px;
+height: 300px;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15%;
+        
+        font-size: medium;
+    }
+    .Formulaire{
+        display: flex;
+        
+        align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    margin:5px;
+}
+#Cv {
+    width: 100%;
+    height: auto;
+}
+img{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+}
+
+    }
+    
+
+   
+    
+
+  
+
+
