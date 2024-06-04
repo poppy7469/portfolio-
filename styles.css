@@ -94,13 +94,13 @@ a{
     width: 100%;
     height: auto;
 }
-img{
+/* img{
     width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 150px;
-}
+    height: 150px; 
+} */
 
     }
     
