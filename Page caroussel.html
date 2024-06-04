@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> site web de competences</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" href="Page Html-Css.html">Html/CSS</a>
+        <a class="nav-link" href="Page caroussel.html">JS</a>
+        <a class="nav-link" href="formulaire php.php">PHP/SQL</a>
+        <a class="nav-link" href="page CV.html">CV</a>
+
+
+    </div>
+    <div class="caroussel">
+        <div class="mySlides">
+            <img src="elephant.webp">
+        </div>
+        <div class="mySlides">
+            <img src="fennec.webp">
+        </div>
+        <div class="mySlides">
+            <img src="vautour.webp">
+        </div>
+    </div>
+    <p> le code en js(Javascript) initialise une variable pour l'index de la diapositive en cours, définit une fonction pour contrôler le
+        diaporama, récupère les diapositives du code  HTML, masque toutes les diapositives sauf celle en cours, incrémente
+        l'index des diapositives, vérifie si l'index des diapositives a dépassé le nombre total de diapositives,
+        réinitialise l'index des diapositives si nécessaire, affiche la diapositive actuelle et programme le rappel de
+        la fonction après 2 secondes pour créer une boucle continue pour le diaporama.</p>
+</body>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 2000); // 2 seconds
+    }
+</script>
+
+</html>
